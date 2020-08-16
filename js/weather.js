@@ -1,6 +1,7 @@
+import { API_KEY } from "./config.js";
+
 const weather = document.querySelector(".js-weather");
 const COORDS = "coords";
-const API_KEY = "5421eb7de4bb78926933e0c9e9939ecd";
 
 function handleGeoError() {
   console.log("Cannot access your location");
