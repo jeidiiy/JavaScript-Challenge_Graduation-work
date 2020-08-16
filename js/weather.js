@@ -1,6 +1,6 @@
 const weather = document.querySelector(".js-weather");
 const COORDS = "coords";
-const myKey = config.API_KEY;
+const API_KEY = "5421eb7de4bb78926933e0c9e9939ecd";
 
 function handleGeoError() {
   console.log("Cannot access your location");
@@ -8,7 +8,7 @@ function handleGeoError() {
 
 function getWeather(lat, lon) {
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${myKey}&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
   )
     .then(function (response) {
       return response.json();
